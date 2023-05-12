@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark-Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="heading">
+            <h1>Student's OutCome</h1>
+        </div>
+        <div class="form" id="form">
+            <div class="row">
+                <div class="data">
+                    <p>Name:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Enter Your Name" id="name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="data">
+                    <p>Roll Number:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Enter Your Roll Number" id="rollNum">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="data">
+                    <p>Calculas:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Enter Your Marks in Calculas" id="s">
+                </div>
+            </div>
+            <div class="row">
+                <div class="data">
+                    <p>English:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Enter Your Marks in English" id="e">
+                </div>
+            </div>
+            <div class="row">
+                <div class="data">
+                    <p>Fundamental Programming:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Enter Your Marks in Programming" id="u">
+                </div>
+            </div>
+            <div class="row">
+                <div class="data">
+                    <p>I.T.C:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Enter Your Marks in I.T.C" id="i">
+                </div>
+            </div>
+            <div class="row">
+                <div class="data">
+                    <p>Applied Physics:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Enter Your Marks in Physics" id="m">
+                </div>
+            </div>
+            <div class="row">
+                <div class="data">
+                    <p>Islamiyat:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Enter Your Marks in Islamiyat" id="c">
+                </div>
+            </div>
+            <div>
+                <button onclick="showRes()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="result" id="res">
+        <div class="heading" style="position: relative;">
+            <h1>Conclusion</h1>
+            <i class="fa fa-xmark" style="font-size: 50px; position: absolute; top: 10px; right: 10px;"
+                onclick="hideRes()"></i>
+        </div>
+        <div class="form" id="form">
+            <div class="row">
+                <div class="h">
+                    <p>Name:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" id="name1" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="h">
+                    <p>Roll Number:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" id="rollNum1" readonly>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="h">
+                    <p>Total Marks:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" id="total" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="h">
+                    <p>Percentage:</p>
+                </div>
+                <div class="inp">
+                    <input type="text" id="percentage" readonly>
+                </div>
+            </div>
+            <div class="grade" id="g">
+                <p id="grade"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
